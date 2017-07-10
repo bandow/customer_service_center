@@ -1,0 +1,293 @@
+@import "base","variable","common";
+.customer-service-center-wrapper{
+	padding-top:44px;
+	background-color:#f7f7f7;
+	.container{
+		padding:3%;
+	}
+}
+.customer-service-center-header{
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	z-index:3;
+	background-color:$white;
+	padding:0 3%;
+	width:100%;
+	height:44px;
+ 	@include display(flex);
+ 	align-items:center;
+ 	border-bottom:1px solid #ddd;
+ 	.left{
+ 		width:10%;
+ 	}
+ 	h1{
+ 		width:80%;
+ 		font:.8rem/44px $publicFont;
+ 		color:#333;
+ 		text-align:center;
+ 	}
+}
+.notice{
+	padding:5%;
+	@include display(flex);
+ 	align-items:center;
+	border-radius:5px;
+	background:#ffcc00;
+	background:-webkit-linear-gradient(left, #ffbb00 , #ffcc00); /* Safari 5.1 - 6.0 */
+	background:linear-gradient(to left, #ffcc00 , #ffbb00); /* 标准的语法 */
+	&:after { 
+	    color:$white;
+	}
+	i{
+		margin-right:.3rem;
+		width:1rem;
+		font-size:0;
+		img{
+			width:100%;
+		}
+	}
+	p{
+		font:.75rem/1.5 $publicFont;
+ 		color:$white;
+	}
+}
+.itinerary{
+	padding:5%;
+	margin-top:3%;
+	border-radius:5px;
+	background:$white;
+	>.title{
+		padding-bottom:5%;
+		@include display(flex);
+ 		align-items:center;
+ 		justify-content: space-between;
+ 		h3{
+			font:.75rem/1.5 $publicFont;
+ 			color:#666;
+ 		}
+ 		a{
+ 			padding-right:5%;
+			font:.7rem/1.5 $publicFont;
+ 			color:#999;
+ 			&:after { 
+			    color:#999;
+			}
+ 		}
+	}
+	.itinerary-swiper-container{
+		.swiper-slide{
+			padding-left:5%;
+			border-radius:5px;
+			background-color:#eee;
+			a{
+				padding:3% 3% 3% 0;
+				display:block;
+				font:.7rem/1.5 $publicFont;
+ 				color:#333;
+ 				border-top:1px solid #ddd;
+ 				&:last-child{
+ 					color:#999;
+ 				}
+			}
+		}
+		.room-info{
+			padding:5% 5% 5% 0;
+			p{
+				font:.65rem/1.5 $publicFont;
+ 				color:#999;
+			}
+		}
+	}
+}
+.hot-question{
+	@extend .itinerary;
+	.question-swiper-container{
+		.swiper-slide{
+			text-align:center;
+			border:1px solid #ddd;
+			border-radius:5px;
+		}
+		a{
+			padding:.5rem;
+			display:block;
+			font:.65rem/1.5 $publicFont;
+			color:#999;
+			br{
+				font-size:0;
+				inline-height:0;
+			}
+		}
+	}
+}
+.common-question{
+	padding:5% 0 0 5%;
+	@extend .itinerary;
+	.items{
+		padding:5% 0;
+		border-top:1px solid #eee;
+		.title{
+			padding-bottom:.5rem;
+			@include display(flex);
+ 			align-items:center;
+ 			i{
+ 				margin-right:.5rem;
+ 				width:1rem;
+ 				font-size:0;
+ 				img{
+ 					width:100%;
+ 				}
+ 			}
+ 			h4{
+ 				font:.8rem/1.5 $publicFont;
+ 				color:#333;
+ 			}
+		}
+		>a{
+			display:block;
+			font:.7rem/1.8 $publicFont;
+ 			color:#666;
+		}
+	}
+}
+
+.itinerary-list{
+	margin-bottom:3%;
+	display:block;
+	padding:3%;
+	background-color:$white !important;
+	border-radius:5px;
+	.title{
+		@include display(flex);
+ 		align-items:flex-start;
+ 		margin-bottom:.3rem;
+ 		h3{
+			font:.75rem/1.5 $publicFont;
+			color:#333;
+		    flex: 1;
+ 		}
+ 		span{
+ 			margin-left:.5rem;
+ 			font:.65rem/1.5 $publicFont;
+ 			color:#999;
+ 		}
+	}
+	>p{
+		font:.65rem/1.5 $publicFont;
+		color:#999;
+	}
+}
+
+.more-question-title{
+	padding:2% 0 3%;
+	font:.6rem/1.5 $publicFont;
+	color:#999;
+}
+.question-list{
+	padding-left:3%;
+	background-color:$white;
+	border-radius:5px;
+	a{
+		padding:3% 0;
+		display:block;
+		font:.7rem/1.5 $publicFont;
+		color:#333;
+		border-bottom:1px solid #eee;
+	}
+}
+
+.question-info{
+	background-color:$white;
+	border-radius:5px;
+	.text{
+		padding:5%;
+		h3{
+			margin-bottom:.3rem;
+			font:.75rem/1.5 $publicFont;
+			color:#333;
+		}
+		p{
+			font:.65rem/1.5 $publicFont;
+			color:#999;
+		}
+	}
+	.btn{
+		border-top:1px solid #eee;
+		ul{
+			@include display(flex);
+ 			align-items:center;
+			li{
+				padding:3% 0;
+				@include display(flex);
+ 				align-items:center;
+ 				justify-content:center;
+				flex:1;
+				i{
+					margin-right:.3rem;
+					display:block;
+					width:.8rem;
+					height:.75rem;
+					background:url('../images/upvote1_icon.png') no-repeat;
+					background-size:100% auto;
+				}
+				p{
+					font:.75rem/1.5 $publicFont;
+					color:#666;
+				}
+				&:last-child{
+					border-left:1px solid #eee;
+					i{
+						display:block;
+						width:.8rem;
+						height:.75rem;
+						background:url('../images/downvote1_icon.png') no-repeat;
+						background-size:100% auto;
+					}
+				}
+			}
+		}
+	}
+}
+.selected{
+	padding:0 5%;
+	margin:3% 0 5%;
+	background-color:$white;
+	border-radius:5px;
+	.line{
+		@include display(flex);
+		align-items:center;
+		padding:3% 0;
+		border-bottom:1px solid #eee;
+		&:last-child{
+			border-bottom:0;
+		}
+		.circle{
+			margin-right:.5rem;
+			width:14px;
+			height:14px;
+			border:1px solid #999;
+			border-radius:100%;
+		}
+		p{
+			flex:1;
+			font:.7rem/1.5 $publicFont;
+			color:#333;
+		}
+	}
+	.active{
+		.circle{
+			position:relative;
+			&:before{
+				position:absolute;
+				top:2px;
+				left:2px;
+				content:"";
+				width:8px;
+				height:8px;
+				background-color:#999;
+				border-radius:100%;
+			}
+		}
+	}
+}
