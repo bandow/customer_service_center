@@ -384,7 +384,8 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex: 1; }
+        flex: 1;
+        cursor: pointer; }
         .question-info .btn ul li i {
           margin-right: .3rem;
           display: block;
@@ -403,10 +404,19 @@ html {
             height: .75rem;
             background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAMAAABY1h8eAAABPlBMVEVMaXGZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZlOaZYQAAAAaXRSTlMAA3gSRMN3D4eZ5Rb3tAY1+WFA+hOIZlT95uQvqlDru6TqATI4c0KQerGnfnCL1Mn8NPbFVkmifMi6CCxddOk6Ka/yjZolm7wMgDYHnlfhBDPtsxjQ060Fg/Ajl2eRsDDz36PBFYnba6uem0raAAABAElEQVQoz33R1VZCURRG4XkADwgICEqn3d3d3d1d//u/gBfoAHUf590a31hrX2w+kioFfPpVbH0VQKns9bZPi9mV2qrW0nMBQHWAT15+FlW3M05FJp2RiSULVDDjsjKgGjMmdOOMx3pyRh7f/sGiXpzxXTlnvNdrGccNaD08l9FlQApBdOrZwqWGv3gbJC9p2iV/TwiApmbPV7vpOzLx+IzV1hlU3yBAS+VP966+b7h7B2IjQCiV7LBt27ZnExtVT4wORcJAo8IYqlc/EFWrCRnWPLjVjnl1Eyx1GXFBO+DWmBG9OoID+YzIob/h/Ew5M17o0q+TfTNajaV8MVCZPwGNPjpAPT6t9gAAAABJRU5ErkJggg==) no-repeat;
             background-size: 100% auto; }
+      .question-info .btn ul .active i {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAMAAABY1h8eAAABR1BMVEVMaXHaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAExpZ0ggAAAAbHRSTlMAtAH5RHfDhw+Znuowk0wunAMMqzP+BOGqFLLM+wUK5kD6hXho7xFL1OX9tzTVZQYW3pcdYlL1+Glvyb4pZmQnECASfXUvWE4ZSBh2r1W70+yR7SG2Czx6rqzH86eK9/Tjj+uWPz55HOdUo929MWkSAAAA9UlEQVQoz3XOxVJDQQAF0SbJ44UIcSUkuLu7u7u7y/3/NQsoiiIzvT2bhj/VXt/eXOUwd6+HO13EjJa+zMRrz7RuxA2dw4kWjbisAKxpwIgzcsCvgMk8E4rAoBpMOKZJoFVNBhv2jkSAsEJl1BfuGK0G4s31jY7jOM7S9jEkN53pWHWnV91dAHX67fOVPUlTrvp7er+vQr6f3oMfaNeXxFVL+UTgDVUCrvzlWFOyY7GQt+OTXux4qmc75gtFK3oOarDirPZBO2Yc0gqowoxRzduxrR0rLqQSdlzVOKBS9jHtaitb9bdoMDMHJFIK5lz9y3t0CHwBtik7zzQLHIEAAAAASUVORK5CYII=) no-repeat;
+        background-size: 100% auto; }
+      .question-info .btn ul .active p {
+        color: #da004c; }
+      .question-info .btn ul .active:last-child i {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAMAAABY1h8eAAABPlBMVEVMaXHaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEzaAEyc4hrIAAAAaXRSTlMAA3gSRMN3D4eZ5Rb3tAY1+WFA+hOIZlT95uQvqlDru6TqATI4sXqQc0J+p3CL1Pw0yfZWxUmiCLp8yCx0XekprzryjZolm7wMgDYHnuFXBDOz7dOtGNDwBYMjl2eRMLDzaxXbwYmj36vTrtGYAAABAElEQVQoz33R1VZCURRG4XkADwgICEqn3d3d3d1d//u/gBfoAHUf590a31hrX2w+kioFfPpVbH0VQKns9bZPC9mV2qrW0nMBQHWAT15+FlWXM45HJpyRqSULVDDjsjKgGjMmdOOMp3pzRt6f/8GinpzxUTlnvNNrGScNaD28lNFlQApBdOzZwqWGv3gbJC9p2iV/TwiApmbPV3vpezLx+KzV2RpU3wBAS+VPd6++b7h7+2PDQCiVbLNt27ZnEhtVT4wORcJAo8IYqtcgEFWHCRnRIrjVjnl1Eyx1G3FeO+DWmBG9OoQD+YzIkb/h4kQ5M17q3K+zfTNajaV8MVCZPwGH5zpAVofzywAAAABJRU5ErkJggg==) no-repeat;
+        background-size: 100% auto; }
 
 .selected {
+  display: none;
   padding: 0 5%;
-  margin: 3% 0 5%;
+  margin: 3% 0 0 0;
   background-color: #fff;
   border-radius: 5px; }
   .selected .line {
@@ -438,6 +448,41 @@ html {
       height: 8px;
       background-color: #999;
       border-radius: 100%; }
+
+.submit-success {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  padding: 1% 5%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  -moz-transform: translate3d(-50%, 3000%, 0);
+  -o-transform: translate3d(-50%, 3000%, 0);
+  -ms-transform: translate3d(-50%, 3000%, 0);
+  -webkit-transform: translate3d(-50%, 3000%, 0);
+  transform: translate3d(-50%, 3000%, 0);
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .submit-success p {
+    font: 0.7rem/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+    color: #fff;
+    text-align: center; }
+
+.submit-success.on {
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 /**
  * Swiper 3.4.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions

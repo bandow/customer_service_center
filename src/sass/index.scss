@@ -223,6 +223,7 @@
  				align-items:center;
  				justify-content:center;
 				flex:1;
+				cursor:pointer;
 				i{
 					margin-right:.3rem;
 					display:block;
@@ -246,12 +247,28 @@
 					}
 				}
 			}
+			.active{
+				i{
+					background:url('../images/upvote2_icon.png') no-repeat;
+					background-size:100% auto;
+				}
+				p{
+					color:#da004c;
+				}
+				&:last-child{
+					i{
+						background:url('../images/downvote2_icon.png') no-repeat;
+						background-size:100% auto;
+					}
+				}
+			}
 		}
 	}
 }
 .selected{
+	display:none;
 	padding:0 5%;
-	margin:3% 0 5%;
+	margin:3% 0 0 0;
 	background-color:$white;
 	border-radius:5px;
 	.line{
@@ -290,4 +307,25 @@
 			}
 		}
 	}
+}
+
+.submit-success{
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:2;
+	padding:1% 5%;
+	background:rgba(0,0,0,.7);
+	border-radius:5px;
+	@include transform(translate3d(-50%,3000%,0));
+	@include transition(all .5s);
+	p{
+		font:.7rem/1.5 $publicFont;
+		color:$white;
+		text-align:center;
+	}
+}
+.submit-success.on{
+	@include transform(translate3d(-50%,-50%,0));
+	@include transition(all .5s);
 }
